@@ -1,8 +1,0 @@
-2025-12-07 14:22:27,181 - INFO - Initialized surrogate training script
-2025-12-07 14:22:29,556 - INFO - Starting surrogate training...
-2025-12-07 14:22:32,888 - INFO - Epoch 1/5 | Loss 87967042.721875
-2025-12-07 14:22:35,501 - INFO - Epoch 2/5 | Loss 1336830.540137
-2025-12-07 14:22:38,649 - INFO - Epoch 3/5 | Loss 33303.381421
-2025-12-07 14:22:41,801 - INFO - Epoch 4/5 | Loss 11997.422363
-2025-12-07 14:22:44,953 - INFO - Epoch 5/5 | Loss 6907.045911
-2025-12-07 14:22:44,971 - INFO - Saved surrogate model to models/surrogate_gpu.pth
