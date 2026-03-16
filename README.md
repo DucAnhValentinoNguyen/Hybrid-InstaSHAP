@@ -13,15 +13,9 @@ The goal of this project is to implement the instaSHAP method for CV and NLP tas
 ```
 Hybrid-InstaSHAP/
 │
-├── src/               # Implementation of clustering, compression, hybrid SHAP
-├── experiments/       # Experiment scripts and configs
-├── notebooks/         # Analysis and visualization
-├── figures/           # Plots for the seminar report
-├── results/           # Metrics and aggregated outputs
-├── models/            # Saved clusterers / explainers
-├── logs/              # Logging output
-├── data/              # Small example datasets
-└── requirements.txt   # Dependencies
+├── final_paper_results/ # Experiment results 
+├── experiments/         # Experiment scripts and configs
+└── requirements.txt     # Dependencies
 ```
 
 ---
