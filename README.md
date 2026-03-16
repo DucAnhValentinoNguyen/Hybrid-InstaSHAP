@@ -5,51 +5,7 @@
 
 This repository contains the implementation, experiments, and analysis for the **instaSHAP** seminar project at **LMU Munich**, supervised by **Dr. Giuseppe Casalicchio**.
 
-The goal of this project is to 
----
-
-## 🚀 Motivation
-
-Traditional SHAP struggles with:
-
-- High computational cost  
-- Instability due to i.i.d. background sampling  
-- Redundant or non-representative background points  
-
-Two existing solutions address parts of this problem:
-
-| Approach | Strength | Weakness |
-|----------|----------|----------|
-| **Clustering** | Produces semantic prototypes | Poor distributional coverage |
-| **Distribution Compression (Kernel Thinning)** | Strong statistical guarantees | No semantic interpretation |
-
-The **InstaSHAP** method combines both for a balanced, efficient background set.
-
----
-
-## 🧠 Method Overview
-
-### 1. **Clustering Step**
-Select K-Means (or alternative) cluster centroids as semantic representatives.
-
-### 2. **Distribution Compression Step**
-Apply kernel thinning/herding to ensure global distributional representativeness.
-
-### 3. **Surrogate Additive Model (InstaSHAP)**
-Train fast additive models to approximate SHAP values directly.
-
-### 4. **Hybrid Background Set**
-
-Hybrid = Cluster Representatives + Compressed Samples
-
-
-Benefits:
-
-- ✔ Stable SHAP value estimates  
-- ✔ Faster computation  
-- ✔ Fewer background samples required  
-- ✔ Balances semantic + statistical representativeness  
-
+The goal of this project is to implement the instaSHAP method for CV and NLP tasks and benchmark them.
 ---
 
 ## 📂 Repository Structure
@@ -73,10 +29,8 @@ Hybrid-InstaSHAP/
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/DucAnhValentinoNguyen/Hybrid-InstaSHAP
-cd Hybrid-InstaSHAP
-chmod +x setup.sh
-./setup.sh
+git clone https://github.com/DucAnhValentinoNguyen/InstaSHAP-benchmarks
+
 ```
 
 ---
@@ -103,23 +57,11 @@ notebooks/
 
 ## 📊 Results Summary
 
-- Runtime improves compared to raw SHAP and compression baselines  
-- Hybrid approach yields **more stable SHAP values**  
-- Works well even with **small background sizes**  
-- Combines semantic + statistical representativeness  
 
-Figures located in `figures/`.
 
 ---
 
-## 📘 Project Information
 
-**Author:** Duc-Anh Nguyen & Shuai Wang
-**Supervisor:** Dr. Giuseppe Casalicchio  
-**Institution:** LMU Munich, Department of Statistics  
-**Course:** XAI Seminar (Winter Semester 2025–26)
-
----
 
 ## 📄 License
 
@@ -150,7 +92,4 @@ SOFTWARE.
 ## 🔮 Future Work
 
 - Extend to text + tabular multimodal models  
-- Evaluate on higher-dimensional datasets  
-- Compare against FastSHAP / Amortized SHAP  
-- GPU-optimized kernel thinning for large-scale compression  
-
+- GPU-optimised kernel thinning for large-scale compression  
